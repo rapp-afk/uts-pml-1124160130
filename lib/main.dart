@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'ProfilePage.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -10,18 +10,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "profile masin rafa fathur rohman",
+      title: "profile  rafa fathur rohman",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-        useMaterial3: false,
+        useMaterial3: true,
       ),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark
+      ),
       themeMode: ThemeMode.system,
+      home: const ProfilePage(),
     );
   }
 }
-
-
-
-  
