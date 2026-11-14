@@ -4,7 +4,14 @@ import 'edit_profile_page.dart';
 import 'about_page.dart';
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+  final VoidCallback onThemeChanged;
+  final bool isDarkMode;
+
+  const ProfilePage({
+    super.key, 
+    required this.onThemeChanged, 
+    required this.isDarkMode,
+  });
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -28,6 +35,11 @@ class _ProfilePageState extends State<ProfilePage> {
         title: const Text('Profil Mahasiswa'),
         centerTitle: true,
         actions: [
+          IconButton(
+            icon: Icon(widget.isDarkMode ? Icons.light_mode : Icons.dark_mode),
+            tooltip: 'Ganti Tema',
+            onPressed: widget.onThemeChanged,
+          ),
           IconButton(
             icon: const Icon(Icons.info_outline),
             tooltip: 'Tentang Aplikasi',
@@ -60,7 +72,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             const SizedBox(height: 4),
             Text(
-              "${userProfile.nim} - ${userProfile.major}",
+              "${userProfile.nim} ${userProfile.major}",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,
