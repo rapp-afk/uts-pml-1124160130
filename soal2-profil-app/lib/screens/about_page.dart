@@ -35,10 +35,19 @@ class AboutPage extends StatelessWidget {
             const Card(
               child: Padding(
                 padding: EdgeInsets.all(16.0),
-                child: Text(
-                  'Aplikasi ini dikembangkan untuk memenuhi Ujian Tengah Semester (UTS) Pemrograman Mobile. Berisi fitur Login, Manajemen Profil, Edit Data, dan Pengaturan Tema.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 14),
+                child: Column(
+                  children: [
+                    Text(
+                      'Aplikasi ini dikembangkan untuk memenuhi Ujian Tengah Semester Pemrograman Mobile Berisi fitur Manajemen Profil, Edit Data, dan Pengaturan Tema.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 14),
+                    ),
+                    SizedBox(height: 12),
+                    Divider(),
+                    SizedBox(height: 8),
+                    Text('• NIM: 1124160130', style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text('• Prodi: Teknik Informatika - Software Engineering', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ],
                 ),
               ),
             ),
