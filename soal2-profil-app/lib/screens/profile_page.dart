@@ -115,6 +115,14 @@ class _ProfilePageState extends State<ProfilePage> {
                   setState(() {
                     userProfile = updatedData;
                   });
+
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Profil berhasil diperbarui!'),
+                      backgroundColor: Colors.green,
+                      duration: Duration(seconds: 2),
+                    ),
+                  );
                 }
               },
             ),
