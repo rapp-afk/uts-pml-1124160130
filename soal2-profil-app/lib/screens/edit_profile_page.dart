@@ -74,7 +74,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Nama tidak boleh kosong';
+                    return 'Nama harus di isi bos'; 
                   }
                   return null;
                 },

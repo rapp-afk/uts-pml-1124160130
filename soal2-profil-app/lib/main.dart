@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/profile_page.dart'; 
-
+import 'screens/login_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -37,7 +36,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
       ),
       themeMode: _isDarkMode ? ThemeMode.dark : ThemeMode.light,
-      home: ProfilePage(
+      home: LoginPage(
         onThemeChanged: _toggleTheme,
         isDarkMode: _isDarkMode,
       ),
