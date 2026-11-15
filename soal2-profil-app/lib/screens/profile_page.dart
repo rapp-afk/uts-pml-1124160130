@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/profile.dart';
 import 'edit_profile_page.dart';
 import 'about_page.dart';
+import '../widgets/profile_info_card.dart';
 
 class ProfilePage extends StatefulWidget {
   final VoidCallback onThemeChanged;
@@ -81,20 +82,23 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             const SizedBox(height: 24),
             const Divider(),
-            ListTile(
-              leading: const Icon(Icons.email, color: Colors.blue),
-              title: const Text('Email'),
-              subtitle: Text(userProfile.email),
+            ProfileInfoCard(
+              icon: Icons.email,
+              iconColor: Colors.blue,
+              title: 'Email',
+              subtitle: userProfile.email,
             ),
-            ListTile(
-              leading: const Icon(Icons.phone, color: Colors.green),
-              title: const Text('Telepon'),
-              subtitle: Text(userProfile.phone),
+            ProfileInfoCard(
+              icon: Icons.phone,
+              iconColor: Colors.green,
+              title: 'Telepon',
+              subtitle: userProfile.phone,
             ),
-            ListTile(
-              leading: const Icon(Icons.info, color: Colors.orange),
-              title: const Text('Bio'),
-              subtitle: Text(userProfile.bio),
+            ProfileInfoCard(
+              icon: Icons.info,
+              iconColor: Colors.orange,
+              title: 'Bio',
+              subtitle: userProfile.bio,
             ),
             const SizedBox(height: 32),
             ElevatedButton.icon(
