@@ -7,55 +7,97 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tentang Aplikasi'),
+        title: const Text('Tentang Mahasiswa'),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(24.0),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const CircleAvatar(
               radius: 50,
               backgroundColor: Colors.blueAccent,
-              child: Icon(Icons.info_outline, size: 50, color: Colors.white),
+              child: Icon(Icons.person, size: 60, color: Colors.white),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
             const Text(
-              'Aplikasi Profil Mahasiswa',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              'Rafa Fathur Rohman',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 8),
-            Text(
-              'Versi 1.0.0+1',
-              style: TextStyle(color: Colors.grey.shade600),
+            const SizedBox(height: 4),
+            const Text(
+              '1124160130 | Teknik Informatika - Software Engineering',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 14, color: Colors.grey),
             ),
             const SizedBox(height: 24),
-            const Card(
+            
+            // Kartu Riwayat Pendidikan, Keahlian & Hobi
+            Card(
+              elevation: 2,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Aplikasi ini dikembangkan untuk memenuhi Ujian Tengah Semester Pemrograman Mobile Berisi fitur Manajemen Profil, Edit Data, dan Pengaturan Tema.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 14),
+                    const Row(
+                      children: [
+                        Icon(Icons.school, color: Colors.blue),
+                        SizedBox(width: 8),
+                        Text(
+                          'Riwayat Pendidikan',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 12),
-                    Divider(),
-                    SizedBox(height: 8),
-                    Text('• NIM: 1124160130', style: TextStyle(fontWeight: FontWeight.bold)),
-                    Text('• Prodi: Teknik Informatika - Software Engineering', style: TextStyle(fontWeight: FontWeight.bold)),
+                    const Divider(),
+                    const Text('• SDN Kedungjati No. 1 Madiun (Lulus 2018)'),
+                    const Text('• MTsN 10 Madiun'),
+                    const Text('• SMK Tunas Harapan Tangerang (Teknik Komputer & Jaringan)'),
+                    const Text('• Institut Teknologi dan Bisnis Bina Sarana Global (Teknik Informatika - Software Engineering)'),
+                    
+                    const SizedBox(height: 20),
+                    const Row(
+                      children: [
+                        Icon(Icons.code, color: Colors.purple),
+                        SizedBox(width: 8),
+                        Text(
+                          'Keahlian & Teknologi',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    const Text('• Pemrograman: Flutter (Dart), PHP (CodeIgniter 3)'),
+                    const Text('• Tools & Database: VS Code, Apache NetBeans, Git/GitHub, DBeaver, PostgreSQL, MySQL'),
+                    
+                    const SizedBox(height: 20),
+                    const Row(
+                      children: [
+                        Icon(Icons.sports_esports, color: Colors.red),
+                        SizedBox(width: 8),
+                        Text(
+                          'Hobi & Aktivitas',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    const Text('• Main Game (Roblox, Point Blank, Mobile Legends, Minecraft)'),
+                    const Text('• Software Development & Eksperimen Coding'),
+                    const Text('• Badminton'),
                   ],
                 ),
               ),
             ),
-            const Spacer(),
+            const SizedBox(height: 24),
             const Text(
               '© 2026 Rafa Fathur Rohman\nInstitut Teknologi dan Bisnis Bina Sarana Global',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 12, color: Colors.grey),
+              style: TextStyle(color: Colors.grey, fontSize: 12),
             ),
           ],
         ),

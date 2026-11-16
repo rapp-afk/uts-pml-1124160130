@@ -43,7 +43,7 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
           IconButton(
             icon: const Icon(Icons.info_outline),
-            tooltip: 'Tentang Aplikasi',
+            tooltip: 'Tentang Mahasiswa',
             onPressed: () {
               Navigator.push(
                 context,
