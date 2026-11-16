@@ -33,7 +33,7 @@
 ## Cara Menjalankan Aplikasi
 1. Clone repository ini ke komputer lokal:
    ```bash
-   git clone [https://github.com/USERNAME_GITHUB_KAMU/soal2-profil-app.git](https://github.com/rapp-afk/soal2-profil-app.git)
+   git clone(https://github.com/rapp-afk/uts-pml-1124160130)
 2. Masuk ke direktori proyek : cd UTS-PML-1124160100/soal2-profil-app
 3. Unduh seluruh paket dependensi: flutter pub get
 4. Jalankan aplikasi pada emulator: flutter run
