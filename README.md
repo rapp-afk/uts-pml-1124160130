@@ -9,7 +9,7 @@
 ---
 
 ## Link YouTube Demo Aplikasi
-- **Link YouTube:** [Tonton Video Demo Aplikasi Profil Rafa Fathur Rohman](https://youtu.be/BRMNjCF1UC8)
+- **Link YouTube:** [Tonton Video Demo Aplikasi Profil Rafa Fathur Rohman](https://youtu.be/BRMNjCF1UC8), kamera laptop saya kurang dalam mengambil rekaman
 
 ---
 
