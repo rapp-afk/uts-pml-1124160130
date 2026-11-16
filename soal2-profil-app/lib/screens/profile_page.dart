@@ -26,7 +26,7 @@ class _ProfilePageState extends State<ProfilePage> {
     phone: "085710408479",
     major: "Teknik Informatika - Software Engineering",
     bio: "Mahasiswa Institut Teknologi dan Bisnis Bina Sarana Global.",
-    avatarUrl: "https://avatars.githubusercontent.com/u/200008369?s=400&u=213107af8f4e02427966636ce9898e1856bbe77b&v=4",
+    avatarUrl: "assets/images/profile.jpeg",
   );
 
   @override
@@ -61,7 +61,7 @@ class _ProfilePageState extends State<ProfilePage> {
             CircleAvatar(
               radius: 50,
               backgroundColor: Colors.blue.shade100,
-              backgroundImage: NetworkImage(userProfile.avatarUrl),
+              backgroundImage: AssetImage('assets/images/profile.jpeg') 
             ),
             const SizedBox(height: 16),
             Text(

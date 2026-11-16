@@ -34,7 +34,6 @@ class AboutPage extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             
-            // Kartu Riwayat Pendidikan, Keahlian & Hobi
             Card(
               elevation: 2,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
