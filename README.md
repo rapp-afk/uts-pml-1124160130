@@ -1,17 +1,36 @@
-# uts_pml
+# Aplikasi Profil Mahasiswa - UTS Pemrograman Mobile
 
-A new Flutter project.
+## Identitas Mahasiswa
+- **Nama:** Rafa Fathur Rohman
+- **NIM:** 1124160130
+- **Program Studi:** Teknik Informatika (Konsentrasi Software Engineering)
+- **Institusi:** Institut Teknologi dan Bisnis Bina Sarana Global
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Link YouTube Demo Aplikasi
+- **Link YouTube:** [Tonton Video Demo Aplikasi Profil Rafa Fathur Rohman](https://youtu.be/BRMNjCF1UC8)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Screenshot Aplikasi
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Halaman Login | Halaman Profil | Halaman Tentang Mahasiswa | Halaman Edit Profil |
+| :---: | :---: | :---: | :---: |
+| <img src="assets/screenshot/ss4.jpeg" width="180" alt="Halaman Login"/> | <img src="assets/screenshot/ss3.jpeg" width="180" alt="Halaman Profil"/> | <img src="assets/screenshot/ss1.jpeg" width="180" alt="Halaman Tentang Mahasiswa"/> | <img src="assets/screenshot/ss2.jpeg" width="180" alt="Halaman Edit Profil"/> |
+
+---
+
+## Daftar Fitur Utama
+- **Autentikasi Login (`LoginPage`):** Validasi form login menggunakan NIM (`1124160130`) dan Password (`rafa`) sebelum masuk ke halaman utama via `Navigator.pushReplacement`.
+- **Profil Mahasiswa (`ProfilePage`):** Menampilkan foto avatar, informasi NIM, program studi, biodata kontak, serta tombol pintasan tema (**Light / Dark Mode**) dan menu Tentang Mahasiswa di AppBar.
+- **Edit Profil (`EditProfilePage`):** Formulir pembaruan data menggunakan `TextEditingController` dan `validator` form, lalu mengirimkan data terbaru kembali ke halaman profil menggunakan `Navigator.pop`.
+- **Tentang Mahasiswa (`AboutPage`):** Halaman khusus di pojok kanan atas yang merangkum riwayat pendidikan lengkap (SMK Tunas Harapan Tangerang, hingga Bina Sarana Global), keahlian pemrograman, serta hobi.
+- **Modular Code Structure:** Penerapan *Clean Code* dengan memisahkan model, screen, dan reusable widgets (`ProfileInfoCard`).
+
+---
+
+## Cara Menjalankan Aplikasi
+1. Clone repository ini ke komputer lokal:
+   ```bash
+   git clone [https://github.com/USERNAME_GITHUB_KAMU/soal2-profil-app.git](https://github.com/USERNAME_GITHUB_KAMU/soal2-profil-app.git)

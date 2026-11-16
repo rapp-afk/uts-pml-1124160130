@@ -54,8 +54,6 @@ class AboutPage extends StatelessWidget {
                       ],
                     ),
                     const Divider(),
-                    const Text('• SDN Kedungjati No. 1 Madiun (Lulus 2018)'),
-                    const Text('• MTsN 10 Madiun'),
                     const Text('• SMK Tunas Harapan Tangerang (Teknik Komputer & Jaringan)'),
                     const Text('• Institut Teknologi dan Bisnis Bina Sarana Global (Teknik Informatika - Software Engineering)'),
                     
