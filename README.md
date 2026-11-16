@@ -17,7 +17,7 @@
 
 | Halaman Login | Halaman Profil | Halaman Tentang Mahasiswa | Halaman Edit Profil |
 | :---: | :---: | :---: | :---: |
-| <img src="assets/screenshot/ss4.jpeg" width="180" alt="Halaman Login"/> | <img src="assets/screenshot/ss3.jpeg" width="180" alt="Halaman Profil"/> | <img src="assets/screenshot/ss1.jpeg" width="180" alt="Halaman Tentang Mahasiswa"/> | <img src="assets/screenshot/ss2.jpeg" width="180" alt="Halaman Edit Profil"/> |
+| <img src="soal2-profil-app/assets/screenshot/ss4.jpeg" width="180" alt="Halaman Login"/> | <img src="soal2-profil-app/assets/screenshot/ss3.jpeg" width="180" alt="Halaman Profil"/> | <img src="soal2-profil-app/assets/screenshot/ss1.jpeg" width="180" alt="Halaman Tentang Mahasiswa"/> | <img src="soal2-profil-app/assets/screenshot/ss2.jpeg" width="180" alt="Halaman Edit Profil"/> |
 
 ---
 
@@ -33,4 +33,7 @@
 ## Cara Menjalankan Aplikasi
 1. Clone repository ini ke komputer lokal:
    ```bash
-   git clone [https://github.com/USERNAME_GITHUB_KAMU/soal2-profil-app.git](https://github.com/USERNAME_GITHUB_KAMU/soal2-profil-app.git)
+   git clone [https://github.com/USERNAME_GITHUB_KAMU/soal2-profil-app.git](https://github.com/rapp-afk/soal2-profil-app.git)
+2. Masuk ke direktori proyek : cd UTS-PML-1124160100/soal2-profil-app
+3. Unduh seluruh paket dependensi: flutter pub get
+4. Jalankan aplikasi pada emulator: flutter run
